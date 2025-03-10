@@ -1,7 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void odd_even(int arr[],int n){
+void odd_even(){
+    int n;
+    cin>>n;
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
+    
     int even=0,odd=0;
     for (int i = 0; i < n; i++)
     {
@@ -17,15 +26,7 @@ void odd_even(int arr[],int n){
 }
 
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-
-    for (int i = 0; i < n; i++)
-    {
-        cin>>arr[i];
-    }
-    
-    odd_even(arr,n);
+        
+    odd_even();
 }
 
